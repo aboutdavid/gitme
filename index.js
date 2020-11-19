@@ -1,7 +1,7 @@
 const config = require("./config.js");
 const ejs = require("ejs");
 const fs = require("fs");
-var md = require('markdown-it')({
+var md = require("markdown-it")({
   html: true,
   linkify: true,
   typographer: true

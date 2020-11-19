@@ -1,3 +1,4 @@
 module.exports = {
-  renderFile: "index.md"
-}
+  renderFile: "index.md",
+  renderEngine: "ejs"
+};
