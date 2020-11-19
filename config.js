@@ -1,4 +1,4 @@
 module.exports = {
   renderFile: "index.md",
-  renderEngine: "ejsa"
+  renderEngine: "ejs"
 };

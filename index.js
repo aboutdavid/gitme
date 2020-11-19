@@ -9,9 +9,9 @@ const md = require("markdown-it")({
 });
 const nunjucks = require("nunjucks")
 
-console.log("GitME")
+console.log("=== GitME, the README.md generator for GitHub ===")
 console.log("Version: 0.0.1")
-console.log(`Reading ${config.renderFile}}...`)
+console.log(`Reading ${config.renderFile}...`)
 // Read the file
 var str = fs.readFileSync(config.renderFile, "utf8")
 // We will require our data file, which scans our directory and compiles all of the .js files into one onject
@@ -28,9 +28,10 @@ var res = ejs.render(str, data);
   process.exit(1);
 }
 // Render Markdown
-console.log()
+console.log("Rendering Markdown...")
 res = md.render(res);
 // Output markdown
-console.log(res);
+
 // Save .md file
 fs.writeFileSync("README.md", res);
+console.log(`GitME compilied your (awesome) README.md file in ${( new Date().valueOf() - startTime) / 1000} seconds!`)
