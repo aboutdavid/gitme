@@ -46,13 +46,13 @@ require("./run.js").command("git", [
   "config",
   "--global",
   "user.email",
-  `${process.env.EMAIL || "john.doe@example.com"}`
+  `${process.env.EMAIL}`
 ]);
 require("./run.js").command("git", [
   "config",
   "--global",
   "user.name",
-  `${process.env.NAME || "John Doe"}`
+  `${process.env.NAME}`
 ]);
 require("./run.js").command("git", ["add", "README.md"]);
 require("./run.js").command("git", [
