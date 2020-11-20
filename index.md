@@ -6,14 +6,8 @@
 You can get data from the `data` folder, such as making requests to an extenal API, generating random numbers, etc.
 
 There are currently two files which the demo uses to set metadata and make sample icons that you can use in your README file,
-like the Node.js icon or the golang icon.
+like the Node.js icon or the golang icon. You can fnd the full list of icons in `data/icons.js`.
 
-<img src="<%= icons.markdown %>" width="22px" align="left">
-<img src="<%= icons.nodejs %>" width="22px" align="left">
-<img src="<%= icons.python %>" width="22px" align="left">
-<img src="<%= icons.golang %>" width="22px" align="left">
-<img src="<%= icons.php %>" width="22px" align="left">
-<br>
 ### How does it work?
 
 <%= metadata.title %> will render the README.md file, then, <%= metadata.title %> will push the rendered README file to your repo using Node.js and GitHub actions.
