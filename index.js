@@ -43,7 +43,7 @@ fs.writeFileSync("README.md", res);
 
 console.log("Saving the README.md file to");
 require("./run.js").command("git", ["add", "README.md"])
-require("./run.js").command("git", ["commit", "-m", "GitME compiled your README.md file!"]);
+require("./run.js").command("git", ["commit", "-m", "\"GitME compiled your README.md file!\""]);
 require("./run.js").command("git", ["push", `https://${process.env.GITHUB_TOKEN}@github.com/${process.env.REPO}.git`, process.env.BRANCH])
 
 console.log(
