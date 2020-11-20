@@ -4,7 +4,6 @@ const ejs = require("ejs");
 const fs = require("fs");
 const nunjucks = require("nunjucks");
 const core = require("@actions/core");
-const GITHUB_TOKEN = core.getInput("gh_token");
 const md = require("markdown-it")({
   html: true,
   linkify: true,
@@ -43,8 +42,9 @@ res = md.render(res);
 fs.writeFileSync("README.md", res);
 
 console.log("Saving the README.md file to");
-require("./run.js").command("git", ["add", "READMe"])
+require("./run.js").command("git", ["add", "README.md"])
 require("./run.js").command("git", ["commit", "-m", "GitME compiled your README.md file!"]);
+require("./run.js").command("git", ["push", `https://${process.env.GITHUB_TOKEN}@github.com/${process.env.REPO}.git`, process.env.BRANCH])
 
 console.log(
   `GitME compilied your (awesome) README.md file in ${(new Date().valueOf() -

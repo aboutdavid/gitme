@@ -6,5 +6,11 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
+        with:
+        node-version: "12.x"
       - run: npm install
       - run: node index.js
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: aboutDavid/gitme
+          BRANCH: main
