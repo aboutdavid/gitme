@@ -9,19 +9,44 @@ There are currently two files which the demo uses to set metadata and make sampl
 like the Node.js icon or the golang icon.
 
 Sample Icons:
-<img src="<%= icons.markdown %>" width="22px" align="left"><img src="<%= icons.nodejs %>" width="22px" align="left">
+<img src="<%= icons.markdown %>" width="22px" align="left">
+<img src="<%= icons.nodejs %>" width="22px" align="left">
+<img src="<%= icons.python %>" width="22px" align="left">
+<img src="<%= icons.golang %>" width="22px" align="left">
+<img src="<%= icons.php %>" width="22px" align="left">
 
 ### How does it work?
 
 <%= metadata.title %> will render the README.md file, then, <%= metadata.title %> will push the rendered README file to your repo using Node.js and GitHub actions.
 
-
-
 ### How do you get started?
+
 1. Click the "Use this template" on this repo.
 2. Make the repo name Username/Username. For example, if your username is johndoe, then your repo would be called johndoe.
-**Note:** If you already have a repo with your username, then rename it to something else, then repeat steps 1 and 2.
-3. (optional) If you have a 
+   **Note:** If you already have a repo with your username, then rename it to something else, then repeat steps 1 and 2.
+3. Pull the repo locally, make changes, and push them to your repo. Or, you could use the Standard built-in GitHub editor.
+4. Set your ENV vars. Leave the `GH_TOKEN` alone as that allows <%= metadata.title %> to push your README file.
+
+```yml
+name: gitme
+on: [push]
+jobs:
+  gitme-compile-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: "12.x"
+      - run: npm install
+      - run: node index.js
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Leave this alone!
+          REPO: username/repo # replace with your username and repo, keep the "/"
+          BRANCH: main # Or whatever branch you want to use
+          EMAIL: 62346025+aboutDavid@users.noreply.github.com # The email you use for Git Commits.
+          NAME: aboutDavid # Your name or username
+```
 
 ### How do you get data from stuff like APIs?
 
@@ -37,21 +62,25 @@ module.exports = {
 };
 ```
 
-Great, we now have some data! 
+Great, we now have some data!
 
-3. Lets get it in our template. By default, <%= metadata.title %> will render the index.md file using ejs. 
-In the `config.js`, you can change `renderEngine` to `nunjucks` if you want to. Here are some ways you can access the demo file:
+3. Lets get it in our template. By default, <%= metadata.title %> will render the index.md file using ejs.
+   In the `config.js`, you can change `renderEngine` to `nunjucks` if you want to. Here are some ways you can access the demo file:
 
 Nunjucks:
+
 ```hbs
 # {{ text.sample }}
 ```
 
 EJS:
+
 ```ejs
 # <%= text.sample %>
 ```
 
 Both of them would render:
+
 # Hello World!
+
 as you can use markdown.
