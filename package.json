@@ -1,16 +1,12 @@
 {
-  "//1": "describes your app and its dependencies",
-  "//2": "https://docs.npmjs.com/files/package.json",
-  "//3": "updating this file will download and update your packages",
-  "name": "hello-express",
-  "version": "0.0.1",
-  "description": "A simple Node app built on Express, instantly up and running.",
+  "name": "gitme",
+  "version": "1.0.0",
+  "description": "Awesome README.md generator for GitHub built with GitHub Actions",
   "main": "server.js",
   "scripts": {
     "start": "echo \"No start specified\""
   },
   "dependencies": {
-    "express": "^4.17.1",
     "ejs": "^3.1.5",
     "markdown-it": "^12.0.1",
     "nunjucks": "^3.2.2",
@@ -20,12 +16,15 @@
     "node": "12.x"
   },
   "repository": {
-    "url": "https://glitch.com/edit/#!/hello-express"
+    "url": "https://glitch.com/edit/#!/gitme"
   },
   "license": "MIT",
   "keywords": [
     "node",
-    "glitch",
-    "express"
+    "github",
+    "actions",
+    "markdown",
+    "nunjucks",
+    "ejs"
   ]
 }
