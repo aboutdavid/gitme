@@ -1,9 +1,14 @@
 dependencies:
+  '@actions/core': 1.2.6
   ejs: 3.1.5
   express: 4.17.1
   markdown-it: 12.0.2
   nunjucks: 3.2.2
 packages:
+  /@actions/core/1.2.6:
+    dev: false
+    resolution:
+      integrity: sha512-ZQYitnqiyBc3D+k7LsgSBmMDVkOVidaagDG7j3fOym77jNunWRuYx7VSHa9GNfFZh+zh61xsCjRj4JxMZlDqTA==
   /a-sync-waterfall/1.0.1:
     dev: false
     resolution:
@@ -688,6 +693,7 @@ registry: 'https://registry.npmjs.org/'
 shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
 specifiers:
+  '@actions/core': ^1.2.6
   ejs: ^3.1.5
   express: ^4.17.1
   markdown-it: ^12.0.1
