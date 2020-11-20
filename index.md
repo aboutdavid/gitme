@@ -13,7 +13,7 @@ like the Node.js icon or the golang icon.
 <img src="<%= icons.python %>" width="22px" align="left">
 <img src="<%= icons.golang %>" width="22px" align="left">
 <img src="<%= icons.php %>" width="22px" align="left">
-
+<br>
 ### How does it work?
 
 <%= metadata.title %> will render the README.md file, then, <%= metadata.title %> will push the rendered README file to your repo using Node.js and GitHub actions.
