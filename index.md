@@ -8,7 +8,6 @@ You can get data from the `data` folder, such as making requests to an extenal A
 There are currently two files which the demo uses to set metadata and make sample icons that you can use in your README file,
 like the Node.js icon or the golang icon.
 
-Sample Icons:
 <img src="<%= icons.markdown %>" width="22px" align="left">
 <img src="<%= icons.nodejs %>" width="22px" align="left">
 <img src="<%= icons.python %>" width="22px" align="left">
