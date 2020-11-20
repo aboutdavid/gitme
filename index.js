@@ -42,9 +42,29 @@ res = md.render(res);
 fs.writeFileSync("README.md", res);
 
 console.log("Saving the README.md file to");
-require("./run.js").command("git", ["add", "README.md"])
-require("./run.js").command("git", ["commit", "-m", "\"GitME compiled your README.md file!\""]);
-require("./run.js").command("git", ["push", `https://${process.env.GITHUB_TOKEN}@github.com/${process.env.REPO}.git`, process.env.BRANCH])
+require("./run.js").command("git", [
+  "config",
+  "--global",
+  "user.email",
+  `${process.env.EMAIL}`
+]);
+require("./run.js").command("git", [
+  "config",
+  "--global",
+  "user.name",
+  `${process.env.NAME}`
+]);
+require("./run.js").command("git", ["add", "README.md"]);
+require("./run.js").command("git", [
+  "commit",
+  "-m",
+  '"GitME compiled your README.md file!"'
+]);
+require("./run.js").command("git", [
+  "push",
+  `https://${process.env.GITHUB_TOKEN}@github.com/${process.env.REPO}.git`,
+  process.env.BRANCH
+]);
 
 console.log(
   `GitME compilied your (awesome) README.md file in ${(new Date().valueOf() -
