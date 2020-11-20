@@ -4,12 +4,11 @@
 You can get data from the <code>data</code> folder, such as making requests to an extenal API, generating random numbers, etc.</p>
 <p>There are currently two files which the demo uses to set metadata and make sample icons that you can use in your README file,
 like the Node.js icon or the golang icon.</p>
-<p>Sample Icons:
 <img src="https://cdn.glitch.com/17eaef8d-c248-49b5-81da-45e23cdc0b12%2Ficons8-markdown-24.png?v=1605831028200" width="22px" align="left">
 <img src="https://cdn.glitch.com/17eaef8d-c248-49b5-81da-45e23cdc0b12%2Ficons8-nodejs-48.png?v=1605830531481" width="22px" align="left">
 <img src="https://cdn.glitch.com/17eaef8d-c248-49b5-81da-45e23cdc0b12%2Ficons8-python-48.png?v=1605830851549" width="22px" align="left">
 <img src="https://cdn.glitch.com/17eaef8d-c248-49b5-81da-45e23cdc0b12%2Ficons8-golang-48.png?v=1605835614356" width="22px" align="left">
-<img src="https://cdn.glitch.com/17eaef8d-c248-49b5-81da-45e23cdc0b12%2Ficons8-php-logo-16.png?v=1605839056865" width="22px" align="left"></p>
+<img src="https://cdn.glitch.com/17eaef8d-c248-49b5-81da-45e23cdc0b12%2Ficons8-php-logo-16.png?v=1605839056865" width="22px" align="left">
 <h3>How does it work?</h3>
 <p>GitME will render the <a href="http://README.md">README.md</a> file, then, GitME will push the rendered README file to your repo using Node.js and GitHub actions.</p>
 <h3>How do you get started?</h3>
