@@ -76,7 +76,7 @@ Nunjucks:
 EJS:
 
 ```ejs
-# <%= text.sample %>
+# <%%= text.sample %%>
 ```
 
 Both of them would render:
