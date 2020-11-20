@@ -9,7 +9,8 @@ like the Node.js icon or the golang icon.</p>
 <img src="https://cdn.glitch.com/17eaef8d-c248-49b5-81da-45e23cdc0b12%2Ficons8-python-48.png?v=1605830851549" width="22px" align="left">
 <img src="https://cdn.glitch.com/17eaef8d-c248-49b5-81da-45e23cdc0b12%2Ficons8-golang-48.png?v=1605835614356" width="22px" align="left">
 <img src="https://cdn.glitch.com/17eaef8d-c248-49b5-81da-45e23cdc0b12%2Ficons8-php-logo-16.png?v=1605839056865" width="22px" align="left">
-<h3>How does it work?</h3>
+<br>
+### How does it work?
 <p>GitME will render the <a href="http://README.md">README.md</a> file, then, GitME will push the rendered README file to your repo using Node.js and GitHub actions.</p>
 <h3>How do you get started?</h3>
 <ol>
