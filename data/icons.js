@@ -9,5 +9,25 @@ module.exports = {
   golang:
     "https://cdn.glitch.com/17eaef8d-c248-49b5-81da-45e23cdc0b12%2Ficons8-golang-48.png?v=1605835614356",
   php:
-    "https://cdn.glitch.com/17eaef8d-c248-49b5-81da-45e23cdc0b12%2Ficons8-php-logo-16.png?v=1605839056865"
+    "https://cdn.glitch.com/17eaef8d-c248-49b5-81da-45e23cdc0b12%2Ficons8-php-logo-16.png?v=1605839056865",
+  html:
+    "https://cdn.glitch.com/17eaef8d-c248-49b5-81da-45e23cdc0b12%2Ficons8-html-5-48.png?v=1605844408246",
+  css:
+    "https://cdn.glitch.com/17eaef8d-c248-49b5-81da-45e23cdc0b12%2Ficons8-css3-48.png?v=1605844427037",
+  javascript:
+    "https://cdn.glitch.com/17eaef8d-c248-49b5-81da-45e23cdc0b12%2Ficons8-javascript-48.png?v=1605844445485",
+  jsfiddle:
+    "https://cdn.glitch.com/17eaef8d-c248-49b5-81da-45e23cdc0b12%2Ficons8-jsfiddle-48.png?v=1605844470511",
+  intellij_idea:
+    "https://cdn.glitch.com/17eaef8d-c248-49b5-81da-45e23cdc0b12%2Ficons8-intellij-idea-48.png?v=1605844492162",
+  pycharm:
+    "https://cdn.glitch.com/17eaef8d-c248-49b5-81da-45e23cdc0b12%2Ficons8-pycharm-48.png?v=1605844544473",
+  notepadplusplus:
+    "https://cdn.glitch.com/17eaef8d-c248-49b5-81da-45e23cdc0b12%2Ficons8-notepad%2B%2B-48.png?v=1605844565012",
+  filezilla:
+    "https://cdn.glitch.com/17eaef8d-c248-49b5-81da-45e23cdc0b12%2Ficons8-filezilla-48.png?v=1605844588043",
+  atomeditor:
+    "https://cdn.glitch.com/17eaef8d-c248-49b5-81da-45e23cdc0b12%2Ficons8-atom-editor-48.png?v=1605844607826",
+  react:
+    "https://cdn.glitch.com/17eaef8d-c248-49b5-81da-45e23cdc0b12%2Ficons8-react-16.png?v=1605844689577"
 };
