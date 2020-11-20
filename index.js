@@ -37,11 +37,11 @@ if (config.renderEngine == "ejs") {
 // Render Markdown
 console.log("Rendering Markdown...");
 res = md.render(res);
-
+console.log("Saving the README file.");
 // Save .md file
 fs.writeFileSync("README.md", res);
 
-console.log("Saving the README.md file to");
+console.log("Pushing the README file to GitHub...")
 require("./run.js").command("git", [
   "config",
   "--global",
@@ -58,7 +58,7 @@ require("./run.js").command("git", ["add", "README.md"]);
 require("./run.js").command("git", [
   "commit",
   "-m",
-  '"GitME compiled your README.md file!"'
+  '"[skip ci] GitME compiled README file."'
 ]);
 require("./run.js").command("git", [
   "push",
