@@ -3,19 +3,19 @@ const { spawn } = require("child_process");
 var cmd = spawn(cmd, args);
 
 cmd.stdout.on("data", data => {
-    console.log(data);
+    console.log(data.toString());
 });
 
 cmd.stderr.on("data", data => {
-    console.error(data);
+    console.error(data.toString());
 });
 
 cmd.on('error', (error) => {
-    console.error(error.message);
+    console.error(error.message.toString());
 });
 
 cmd.on("close", code => {
-    console.log(`child process exited with code: ${code}`);
+    console.log(`child process exited with code: ${code}`.toString());
 });
 }
 module.exports = {command}
