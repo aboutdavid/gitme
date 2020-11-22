@@ -23,9 +23,9 @@ var data = require("./data.js");
 console.log(`Rendering ${config.renderFile} with ${config.renderEngine}`);
 
 // Render ejs
-if (config.renderEngine === "ejs") {
+if (config.renderEngine == "ejs") {
   var res = ejs.render(str, data);
-} else if (config.renderEngine === "nunjucks") {
+} else if (config.renderEngine == "nunjucks") {
   var res = nunjucks.renderString(str, data);
 } else {
   throw new Error(
