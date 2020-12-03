@@ -8,6 +8,7 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: "12.x"
+      - run: rm -f /home/runner/work/gitme/gitme/.git/index.lock
       - run: npm install
       - run: node index.js
         env:
