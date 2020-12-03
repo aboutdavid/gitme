@@ -16,6 +16,10 @@ cmd.on('error', (error) => {
 
 cmd.on("close", code => {
     console.log(`child process exited with code: ${code}`.toString());
+    if (code == "0" || code == 0){
+        console.error("exiting...")
+        process.exit(code)
+    }
 });
 }
 module.exports = {command}
